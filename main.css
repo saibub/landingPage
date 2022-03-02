@@ -1,0 +1,219 @@
+:root {
+    --red: #f92e54;
+    --black: #020401;
+    --white: #ffffff;
+    --lightgrey: rgb(192, 191, 191);
+    --darkgrey: rgba(88, 88, 88, 0.6);
+    --primary-font: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    --webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.top-banner {
+    width: 100%;
+    background: url('/assets/images/bg-img.png') no-repeat center;
+    background-size: cover;
+    padding: 5rem 0 9rem 0;
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.logo img {
+    height: 10rem;
+    width: auto;
+}
+
+.form {
+    position: absolute;
+    top: 0em;
+    right: 2rem;
+    background-color: var(--darkgrey);
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+blockquote img {
+    height: 7rem;
+    width: auto;
+}
+
+.reviewer {
+    font-size: 1rem;
+}
+
+.reviewer img {
+    height: 3.5rem;
+    width: auto;
+}
+
+.bg-red {
+    background-color: var(--red);
+    width: 75.5%;
+}
+
+.feature img {
+    height: 8rem;
+    width: auto;
+}
+
+.feature-title {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.footer {
+    width: 75.5%;
+    font-size: 0.9rem;
+}
+
+.ending {
+    margin-top: 2em;
+    padding: 0em 2.3em;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: var(--white);
+    text-align: center;
+    padding: 0.5em;
+    transition: all 0.01s;
+    cursor: pointer;
+    background-color: var(--red);
+    border: none;
+}
+
+.button:focus,
+.button:hover {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background-color: #f70a36;
+}
+
+.error {
+    border-color: red;
+}
+
+.title3 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .body {
+        font-size: 0.2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .big-p {
+        font-size: 0.8em;
+    }
+    .form {
+        background-color: var(--black);
+        top: 80vh;
+        right: 0em;
+    }
+    .small {
+        font-size: 0.8rem;
+    }
+    .hidden {
+        display: block;
+        background-color: var(--black);
+        height: 90vh;
+    }
+    .title h2 {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+    .reviews,
+    .features {
+        flex-direction: column;
+    }
+    .reviews .border {
+        margin: 1em;
+        margin-bottom: 0 !important;
+    }
+    .w-75 {
+        width: 90% !important;
+    }
+    blockquote img {
+        height: 5rem;
+    }
+    .bg-red {
+        width: 81.3%;
+    }
+    .title2 {
+        font-size: 1.2rem;
+    }
+    .feature img {
+        height: 6rem;
+    }
+    .feature-description {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .feature {
+        font-size: 0.9rem;
+    }
+    .ending {
+        margin-top: 0.5em;
+    }
+    .title3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .features {
+        flex-direction: column;
+    }
+    .ending {
+        padding: 1em 2em 0em;
+    }
+    .title3 {
+        text-align: center !important;
+        font-size: 1.5rem;
+    }
+    .feature-description {
+        padding: 0em 2em;
+    }
+    .ending {
+        margin-top: 0.5em;
+    }
+}
